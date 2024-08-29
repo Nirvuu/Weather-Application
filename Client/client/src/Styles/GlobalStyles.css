@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./../Assets/11.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+.weather-app {
+  background-color: #ffffff;
+  padding: 30px 30px 23px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  min-height: 230px; 
+}
+
+.weather-app input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 17px;
+}
+
+.weather-app button {
+  padding: 8px 16px;
+  margin-bottom: 17px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.weather-app button:hover {
+  background-color: #0056b3;
+}
+
+.weather-details, .forecast-details {
+  margin-top: 20px;
+}
+
+.weather-details img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-details p, .forecast-details p {
+  margin: 5px 0;
+}
+
+.forecast-details {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.span {
+  padding-bottom: 15px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f00ff;
+}
+
+.Showbutton {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.Homepage {
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hourly-details {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  min-height: 300px; 
+}
+
+.gotopage {
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user-info-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+
+}
+
+.sign-out-button{
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 17px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email {
+  font-size: 16px;
+  color: #666;
+}

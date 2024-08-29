@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Weather {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  country     String
+  region      String
+  temp        Float
+  feelsLike   Float
+  wind        Float
+  humidity    Int
+  condition   String
+  icon        String
+  lastUpdated DateTime
+}
+
+model Forecast {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  date          DateTime
+  maxTemp       Float
+  minTemp       Float
+  condition     String
+  icon          String
+  sunrise       String
+  sunset        String
+  moonrise      String
+  moonset       String
+  moonPhase     String
+  chanceOfRain  Int
+  chanceOfSnow  Int
+  hourly        Json
+  lastUpdated   DateTime @default(now())
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
