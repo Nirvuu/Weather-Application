@@ -10,7 +10,8 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = 'YOUR-API-KEY';
+const API_KEY = 'd04ce1e12f8e4cce8f492503240808';
+//const API_KEY = 'YOUR-API-KEY';
 
 app.get('/weather', async (req, res) => {
   const { name } = req.query;
