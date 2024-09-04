@@ -13,6 +13,7 @@ app.use(express.json());
 
 const API_KEY = 'YOUR-API-KEY';
 
+
 app.get('/weather', async (req, res) => {
   const { name } = req.query;
 
