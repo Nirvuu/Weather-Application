@@ -18,7 +18,7 @@ app.use(session({
   cookie: { secure: true} 
 }));
 
-const JWT_SECRET = 'abcd1234efgh';
+const JWT_SECRET = 'YOUR-JWT-SECRET';   //Add  a secure secret key
 
 const authenticateToken = (req, res, next) => {
   const token = req.cookies.token;
