@@ -33,46 +33,40 @@ This project is a full-stack web application that displays current weather data,
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/weather-dashboard.git
+   git clone git clone https://github.com/Nirvuu/Weather-Application.git
    cd weather-dashboard
-Install dependencies: For both frontend and backend, install the required dependencies using:
-
-bash
-Copy code
+**Install dependencies:** 
+For both frontend and backend, install the required dependencies using:
 npm install
-Set up environment variables:
+
+**Set up environment variables:**
 
 In the WeatherAPI.js file, replace YOUR_API_KEY_HERE with your actual weather API key.
 In the Auth.js file, replace YOUR_SECRET_KEY_HERE with your JWT secret key.
-For example:
 
-javascript
-Copy code
-// WeatherAPI.js
-const API_KEY = "YOUR_API_KEY_HERE";
-
-// Auth.js
-const JWT_SECRET = "YOUR_SECRET_KEY_HERE";
-Run database migrations: Ensure that your Prisma setup is connected to the MySQL database:
+**Run database migrations: **
+Ensure that your Prisma setup is connected to the MySQL database:
 
 bash
 Copy code
 npx prisma migrate dev
-Start the backend server:
 
-bash
-Copy code
+**Start the backend server:**
 npm start
-Start the frontend: Navigate to the client folder and start the React application:
 
-bash
-Copy code
+**Start the frontend:**
+
+Navigate to the client folder and start the React application:
 cd client
 npm start
-Usage
+
+**Usage**
+
 Login/Signup: Use the login and signup forms to create an account and log in to the application. Passwords are hashed using bcrypt, and upon successful login, a JWT token will be stored in cookies.
 Weather Search: After logging in, you can search for a city to get the current weather and hourly details for the day.
-File Structure
+
+**File Structure**
+
 client/: Contains the React frontend code.
 server/: Contains the Node.js backend code.
 src/routes/WeatherAPI.js: File where the weather API key needs to be added.
@@ -80,19 +74,14 @@ src/routes/Auth.js: File where the JWT secret key needs to be added.
 Environment Variables
 You will need to define the following environment variables:
 
-Variable	Description
+**Variable	Description**
 API_KEY	Your weather API key
 JWT_SECRET	Your secret key for JWT
 DATABASE_URL	Prisma connection string
-Technologies Used
+
+**Technologies Used**
 Frontend: React
 Backend: Node.js, Express
 Database: MySQL (managed using Prisma ORM)
 Authentication: JWT, bcrypt, cookies
 Weather API: For fetching weather data
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgements
-Weather data is provided by OpenWeatherMap.
-Prisma ORM documentation can be found here.
