@@ -31,17 +31,16 @@ This project is a full-stack web application that displays current weather data,
 
 ### Installation
 
-1. **Clone the repository**:
+ **Clone the repository**:
    ```bash
    git clone git clone https://github.com/Nirvuu/Weather-Application.git
    cd weather-dashboard ```
    
-2.**Install dependencies:** 
+**Install dependencies:** 
 For both frontend and backend, install the required dependencies using:
  ```npm install ```
 
-3.**Set up environment variables:**
-
+**Set up environment variables:**
 In the WeatherAPI.js file, replace  ```YOUR_API_KEY_HERE ``` with your actual weather API key.
 In the Auth.js file, replace ``` YOUR_SECRET_KEY_HER ```E with your JWT secret key.
 
