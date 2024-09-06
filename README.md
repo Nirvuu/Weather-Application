@@ -37,7 +37,7 @@ This project is a full-stack web application that displays current weather data,
    cd weather-dashboard
 **Install dependencies:** 
 For both frontend and backend, install the required dependencies using:
-npm install
+ ```npm install
 
 **Set up environment variables:**
 
