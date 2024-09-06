@@ -34,10 +34,11 @@ This project is a full-stack web application that displays current weather data,
 1. **Clone the repository**:
    ```bash
    git clone git clone https://github.com/Nirvuu/Weather-Application.git
-   cd weather-dashboard
+   cd weather-dashboard ```
+   
 **Install dependencies:** 
 For both frontend and backend, install the required dependencies using:
- ```npm install
+ ```npm install ```
 
 **Set up environment variables:**
 
