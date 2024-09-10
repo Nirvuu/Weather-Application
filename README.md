@@ -32,7 +32,7 @@ This project is a full-stack web application that displays current weather data,
 ### Installation
 
  **Clone the repository**:
-   ```bash
+   ```
    git clone git clone https://github.com/Nirvuu/Weather-Application.git
    cd weather-dashboard ```
    
