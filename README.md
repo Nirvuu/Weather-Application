@@ -48,6 +48,7 @@ In the WeatherAPI.js file, replace YOUR_API_KEY_HERE with your actual weather AP
 In the Auth.js file, replace YOUR_SECRET_KEY_HERE with your JWT secret key.
 
 **Run database migrations: **
+
 Ensure that your Prisma setup is connected to the MySQL database:
 
  ```
@@ -55,12 +56,13 @@ Ensure that your Prisma setup is connected to the MySQL database:
  
  ```
 **Start the backend server:**
+
  ```
 npm start : api
 npm start : auth
 
 ```
-6.**Start the frontend:**
+**Start the frontend:**
 
 Navigate to the client folder and start the React application:
 
