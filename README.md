@@ -48,9 +48,9 @@ npm install
  ```
 **Set up environment variables:**
 
+- In the `WeatherAPI.js` file, replace `YOUR_API_KEY_HERE` with your actual weather API key.
+- In the `Auth.js` file, replace `YOUR_SECRET_KEY_HERE` with your JWT secret key.
 
-In the WeatherAPI.js file, replace YOUR_API_KEY_HERE with your actual weather API key.
-In the Auth.js file, replace YOUR_SECRET_KEY_HERE with your JWT secret key.
 
 **Run database migrations:**
 
@@ -78,9 +78,10 @@ Navigate to the client folder and start the React application:
  ```
 **Usage**
 
-
 Login/Signup: Use the login and signup forms to create an account and log in to the application. Passwords are hashed using bcrypt, and upon successful login, a JWT token will be stored in cookies.
+
 Weather Search: After logging in, you can search for a city to get the current weather and hourly details for the day.
+
 
 **File Structure**
 
