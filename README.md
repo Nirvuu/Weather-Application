@@ -32,22 +32,26 @@ This project is a full-stack web application that displays current weather data,
 ### Installation
 
  **Clone the repository**:
+ 
    ```
    git clone git clone https://github.com/Nirvuu/Weather-Application.git
    cd weather-dashboard
- ```
+
+   ```
    
-**Install dependencies: **
+**Install dependencies:**
 For both frontend and backend, install the required dependencies using:
+
  ```
 npm install
 
  ```
 **Set up environment variables:**
+
 In the WeatherAPI.js file, replace YOUR_API_KEY_HERE with your actual weather API key.
 In the Auth.js file, replace YOUR_SECRET_KEY_HERE with your JWT secret key.
 
-**Run database migrations: **
+**Run database migrations:**
 
 Ensure that your Prisma setup is connected to the MySQL database:
 
@@ -79,16 +83,12 @@ Weather Search: After logging in, you can search for a city to get the current w
 **File Structure**
 
 client/: Contains the React frontend code.
-server/: Contains the Node.js backend code.
-src/routes/WeatherAPI.js: File where the weather API key needs to be added.
-src/routes/Auth.js: File where the JWT secret key needs to be added.
-Environment Variables
-You will need to define the following environment variables:
 
-**Variable	Description**
-API_KEY	Your weather API key
-JWT_SECRET	Your secret key for JWT
-DATABASE_URL	Prisma connection string
+server/: Contains the Node.js backend code.
+
+src/routes/WeatherAPI.js: File where the weather API key needs to be added.
+
+src/routes/Auth.js: File where the JWT secret key needs to be added.
 
 **Technologies Used**
 Frontend: React
