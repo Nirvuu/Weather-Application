@@ -82,17 +82,16 @@ Weather Search: After logging in, you can search for a city to get the current w
 
 **File Structure**
 
-client/: Contains the React frontend code.
-
-server/: Contains the Node.js backend code.
-
-src/routes/WeatherAPI.js: File where the weather API key needs to be added.
-
+client/: Contains the React frontend code.  
+server/: Contains the Node.js backend code.  
+src/routes/WeatherAPI.js: File where the weather API key needs to be added.  
 src/routes/Auth.js: File where the JWT secret key needs to be added.
 
 **Technologies Used**
-Frontend: React
-Backend: Node.js, Express
-Database: MySQL (managed using Prisma ORM)
-Authentication: JWT, bcrypt, cookies
+
+Frontend: React  
+Backend: Node.js, Express  
+Database: MySQL (managed using Prisma ORM)  
+Authentication: JWT, bcrypt, cookies  
 Weather API: For fetching weather data
+
