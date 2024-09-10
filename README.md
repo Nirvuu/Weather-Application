@@ -24,77 +24,60 @@ This project is a full-stack web application that displays current weather data,
 ## Getting Started
 
 ### Prerequisites
-
 - **Node.js**: Make sure you have Node.js installed on your machine.
 - **MySQL Database**: Set up a MySQL database and update the connection details in Prisma's configuration file.
 - **Weather API Key**: You will need an API key from a weather service provider (e.g., OpenWeatherMap).
 
 ### Installation
 
- **Clone the repository**:
- 
-   ```
-   git clone git clone https://github.com/Nirvuu/Weather-Application.git
-   cd weather-dashboard
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Nirvuu/Weather-Application.git
+    cd weather-dashboard
+    ```
 
-   ```
-   
-**Install dependencies:**
-For both frontend and backend, install the required dependencies using:
+2. **Install dependencies**: For both frontend and backend, install the required dependencies using:
+    ```bash
+    npm install
+    ```
 
- ```
-npm install
+3. **Set up environment variables**:
+    - In the `WeatherAPI.js` file, replace `YOUR_API_KEY_HERE` with your actual weather API key.
+    - In the `Auth.js` file, replace `YOUR_SECRET_KEY_HERE` with your JWT secret key.
 
- ```
-**Set up environment variables:**
-
-- In the `WeatherAPI.js` file, replace `YOUR_API_KEY_HERE` with your actual weather API key.
-- In the `Auth.js` file, replace `YOUR_SECRET_KEY_HERE` with your JWT secret key.
-
-
-**Run database migrations:**
-
-Ensure that your Prisma setup is connected to the MySQL database:
-
- ```
+4. **Run database migrations**: Ensure that your Prisma setup is connected to the MySQL database:
+    ```bash
     npx prisma migrate dev
- 
- ```
-**Start the backend server:**
+    ```
 
- ```
-npm start : api
-npm start : auth
+5. **Start the backend server**:
+    ```bash
+    npm start -- api
+    npm start -- auth
+    ```
 
-```
-**Start the frontend:**
+6. **Start the frontend**: Navigate to the client folder and start the React application:
+    ```bash
+    cd client
+    npm start
+    ```
 
-Navigate to the client folder and start the React application:
+## Usage
 
- ```
-  cd client 
-  npm start
- 
- ```
-**Usage**
+- **Login/Signup**: Use the login and signup forms to create an account and log in to the application. Passwords are hashed using bcrypt, and upon successful login, a JWT token will be stored in cookies.
+- **Weather Search**: After logging in, you can search for a city to get the current weather and hourly details for the day.
 
-Login/Signup: Use the login and signup forms to create an account and log in to the application. Passwords are hashed using bcrypt, and upon successful login, a JWT token will be stored in cookies.
+## File Structure
 
-Weather Search: After logging in, you can search for a city to get the current weather and hourly details for the day.
+- `client/`: Contains the React frontend code.  
+- `server/`: Contains the Node.js backend code.  
+- `src/routes/WeatherAPI.js`: File where the weather API key needs to be added.  
+- `src/routes/Auth.js`: File where the JWT secret key needs to be added.
 
+## Technologies Used
 
-**File Structure**
-
-client/: Contains the React frontend code.  
-server/: Contains the Node.js backend code.  
-src/routes/WeatherAPI.js: File where the weather API key needs to be added.  
-src/routes/Auth.js: File where the JWT secret key needs to be added.
-
-**Technologies Used**
-
-Frontend: React  
-Backend: Node.js, Express  
-Database: MySQL (managed using Prisma ORM)  
-Authentication: JWT, bcrypt, cookies  
-Weather API: For fetching weather data
-
+- **Frontend**: React  
+- **Backend**: Node.js, Express  
+- **Database**: MySQL (managed using Prisma ORM)  
+- **Authentication**: JWT, bcrypt, cookies  
+- **Weather API**: For fetching weather data
